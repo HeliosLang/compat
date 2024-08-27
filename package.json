@@ -1,6 +1,6 @@
 {
     "name": "@helios-lang/compat",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Compatibility package for transitioning from v0.16.* to v0.17",
     "main": "src/index.js",
     "types": "types/index.d.ts",
