@@ -31,6 +31,9 @@ export {
 export {
     Bip32PrivateKey,
     Emulator as NetworkEmulator,
+    TxBuilder,
+    TxChain,
+    TxChainBuilder,
     WalletHelper
 } from "@helios-lang/tx-utils"
 export {
