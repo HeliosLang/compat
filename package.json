@@ -1,0 +1,50 @@
+{
+    "name": "@helios-lang/compat",
+    "version": "0.1.0",
+    "description": "Compatibility package for transitioning from v0.16.* to v0.17",
+    "main": "src/index.js",
+    "types": "types/index.d.ts",
+    "type": "module",
+    "scripts": {
+        "build": "npm run prettify && npm run build:types",
+        "build:types": "npx tsc -p jsconfig.json --noEmit false --emitDeclarationOnly",
+        "prettify": "npx prettier . --write",
+        "test": "npm run test:pretty && npm run test:types",
+        "test:pretty": "npx prettier . --check",
+        "test:types": "npx tsc -p jsconfig.json --noEmit"
+    },
+    "prettier": {
+        "trailingComma": "none",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": false
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HeliosLang/compat.git"
+    },
+    "keywords": [
+        "Cardano",
+        "blockchain",
+        "smart",
+        "contracts"
+    ],
+    "author": "Christian Schmitz",
+    "license": "BSD-3-Clause",
+    "bugs": {
+        "url": "https://github.com/HeliosLang/compat/issues"
+    },
+    "homepage": "https://github.com/HeliosLang/compat#readme",
+    "dependencies": {
+        "@helios-lang/codec-utils": "^0.1.33",
+        "@helios-lang/compiler": "^0.17.0-59",
+        "@helios-lang/crypto": "^0.1.14",
+        "@helios-lang/ledger": "^0.4.3",
+        "@helios-lang/tx-utils": "^0.1.70",
+        "@helios-lang/uplc": "^0.2.0"
+    },
+    "devDependencies": {
+        "prettier": "^3.3.3",
+        "typescript": "^5.5.4"
+    }
+}
