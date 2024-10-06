@@ -36,12 +36,12 @@
     },
     "homepage": "https://github.com/HeliosLang/compat#readme",
     "dependencies": {
-        "@helios-lang/codec-utils": "^0.1.33",
-        "@helios-lang/compiler": "^0.17.0-59",
+        "@helios-lang/codec-utils": "^0.1.35",
+        "@helios-lang/compiler": "0.17.0-99",
         "@helios-lang/crypto": "^0.1.14",
-        "@helios-lang/ledger": "^0.4.3",
-        "@helios-lang/tx-utils": "^0.1.70",
-        "@helios-lang/uplc": "^0.2.0"
+        "@helios-lang/ledger": "^0.5.6",
+        "@helios-lang/tx-utils": "^0.1.77",
+        "@helios-lang/uplc": "^0.4.13"
     },
     "devDependencies": {
         "prettier": "^3.3.3",
